@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="./modern-normalize.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="part1">
+            <div class="logoBar">
+                <img src="./odin-logo.png" alt="logo of odin">
+                <p>ODIN</p>
+            </div>
+            <div class="image-author">Photo by <a href="https://unsplash.com/@haliewestphoto">Haile West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+        </div>
+        <div class="part2">
+            <div class="info-section">
+                <p>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams. 
+                    Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-section">
+                <p>Let's do this!</p>
+                <form action="" method="get" id="sign-form">
+                    <div class="formInput">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John" />
+                    </div>
+                    <div class="formInput">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Doe" />
+                    </div>
+                    <div class="formInput">
+                        <label for="e-mail">EMAIL</label>
+                        <input type="email" id="e-mail" name="email" placeholder="d@gmail.com"/>
+                    </div>
+                    <div class="formInput">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" placeholder="929-284-2334" pattern="^\d{3}-\d{3}-\d{4}$"/>
+                    </div>
+                    <div class="formInput">
+                        <label for="pwrd">PASSWORD</label>
+                        <input type="password" id="pwrd" name="password" placeholder=""/>
+                    </div>
+                    <div class="formInput">
+                        <label for="pwrdC">CONFIRM PASSWORD</label>
+                        <input type="password" id="pwrdC" name="confirmPassword" placeholder="" required/>
+                    </div>
+                </form>
+            </div>
+            <div class="submit-section">
+                <button type="submit" form="sign-form">Create Account</button>
+                <p>Already have an account? <span class="login">Log in</span></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,165 @@
+
+
+:root {
+    --button-color: #596D48;
+    --input-border: #E5E7EB;
+    --invalid-border-color: red;
+    --valid-border-color: green;
+    --focus-border: 2px solid blue;
+    /**--input-box-shadow: */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+@font-face {
+    font-family: norse;
+    src: url(./norse/Norsebold.otf);
+}
+
+/**Part 1 styles*/
+
+.part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(./leaves.jpg);
+    background-size: cover;
+    min-width: 35%;
+    position: relative;
+    
+}
+
+.logoBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    top: 200px; 
+}
+
+img {
+    width: 90px;
+    height: 110px;
+}
+
+.logoBar p {
+    font-family: norse;
+    font-size: 5.5rem;
+    color: white;
+    margin: 0px;
+}
+
+.image-author {
+    color: white;
+    font-size: .7rem;
+    margin-bottom: 20px;
+}
+
+.image-author a:link,
+.image-author a:visited
+ {
+    color: white;
+}
+
+/**Part 2 styles*/
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    
+}
+
+.info-section, .form-section, .submit-section {
+    padding: 20px 40px;
+}
+
+
+.info-section {
+    border: 1px solid black;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #f9fafb;
+}
+
+.info-section > p {
+    width: 65%;
+}
+
+.form-section {
+    border: 1px solid black;
+    flex: 1 1 auto;
+}
+
+.form-section > p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.formInput label {
+    font-size: .7rem;
+    color: #6c6d6f;
+}
+
+.formInput input {
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+}
+
+.submit-section {
+    border: 1px solid black;
+    flex: 1 1 auto;
+}
+
+.submit-section > button {
+    width: 180px;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 5px;
+    border: 0px;
+}
+
+.login {
+    color: var(--button-color);
+    font-weight: bold;
+}
+
+/** Validation Styles */
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:placeholder-shown {
+    border: 1px solid #ccc;
+}
+
+
+
