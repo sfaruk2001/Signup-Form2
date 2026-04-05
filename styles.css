@@ -167,5 +167,12 @@ input:placeholder-shown {
     border: 1px solid #ccc;
 }
 
+input[type='password']:invalid + span:before {
+    content: '*Passwords do not match';
+    color: red;
+}
+
+
+
 
 
